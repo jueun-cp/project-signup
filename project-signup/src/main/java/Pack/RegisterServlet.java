@@ -26,7 +26,7 @@ public class RegisterServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("register doPost 호출");
-		request.setCharacterEncoding("euc-kr");
+		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html; charset=UTF-8");
 		String id = request.getParameter("id");
 		System.out.println(id);
@@ -38,10 +38,8 @@ public class RegisterServlet extends HttpServlet {
 				+"<h1>"+id+"님 회원가입 완료되었습니다.</h1>"
 				+"</body>" 
 				+"</html>" );
-
+		System.out.println(id);
 		out.close();
-		
-		
 	}
 
 }
