@@ -18,7 +18,7 @@
 ## Git command
 1. add file 
 ```
-	git add [file name]
+	git add file-name
 ```
 2. write commit log
 ```
